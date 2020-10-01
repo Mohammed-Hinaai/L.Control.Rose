@@ -15,11 +15,11 @@ Check out the demo [here](http://bradhamson.github.io/L.Control.Rose/#11/39.2846
 
 ##Using the Plugin
 
-First add the L.Control.Rose.css, L.Control.Rose.js, and copy the `arrows` 
+First add the L.Control.Rose.css, L.Control.Rose.js, and copy the `arrows`
 directory from the dist directory into your root directory.
 
 ~~~~html
-<link rel="stylesheet" href="dist/L.Control.Rose.css" />
+<link rel="stylesheet" href="C:\Users\moha4\Documents\GitHub\L.Control.Rose\dist\L.Control.Rose.css" />
 <script src="dist/L.Control.Rose.js"></script>
 ~~~~
 

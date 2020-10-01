@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+          integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <title>Calgary Solar projects</title>
+</head>
+
+	 <head2>
+
+      <meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+       integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin=""/>
+  <scripts src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+     integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+      crossorigin=""></scripts>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="L.Control.BetterScale.css" />
+ <script src="L.Control.BetterScale.js"></script>
+
+<title>Calgary Solar projects</title>
+  </head2>
+
+
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<style2>
+<body style="background-color:powderblue;">
+</style2>
+</head2>
+
+
+  <body class="w3-light-grey";>
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32">
+  <h1 style="background-color:powderblue; height:150px;" ; ><b>Solar PV projects in Calgary
+  </b></h1>
+  <p >This is a web map shows the Photovoltaic projects location, size</p>
+			<p2>and year of built in Calgary, Alberta. <span class="w3-tag">Wellcome</span></p2>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+
+
+
+	<div id="mapid" style = "width:100%; height:580px; position:center;"></div>
+	<script>
+	var mymap= L.map('mapid').setView([51.0447, -114.0719], 11);
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoibW9oYW1tZWQtYWwtaGluYWFpIiwiYSI6ImNrZm5mNjh3bjFvdDAyc28wM2R6a3R5dzkifQ.9myRT29Aw5gq1ekO9tEVzw'
+}).addTo(mymap);
+		L.control.scale().addTo(mymap);
+</script>
+<div id="rose">
+</div>
+
+<script><link rel="stylesheet" href="dist/L.Control.Rose.css" /></<script>
+  
+<script src="C:\Users\moha4\Documents\GitHub\L.Control.Rose\src\L.Control.Rose.js"></script>
+
+<script>
+var marker1= L.marker([51.04554915522324, -114.05628204345702]).addTo(mymap);
+marker1.bindPopup("<b>Name: Municipal Building</b><br> project size: 1 KW.</b><br>Built in: 2008 ").openPopup();
+
+var marker2= L.marker([50.91647150366104, -113.9631450176239]).addTo(mymap);
+marker2.bindPopup("<b>project Name: Fire Station No.30</b><br> project size: 1 KW.</b><br>Built in: 2010").openPopup();
+var marker3= L.marker([50.943722, -113.901920]).addTo(mymap);
+marker3.bindPopup("<b>project Name: Ralph Klein Legacy Park </b><br> project size: 2 KW.</b><br>Built in: 2010").openPopup();
+
+var marker4= L.marker([51.037096, -114.188680]).addTo(mymap);
+marker4.bindPopup("<b>project Name: Fire Station No. 22 </b><br> project size: 1 KW.</b><br>Built in: 2011").openPopup();
+var marker5= L.marker([51.091694, -113.957592]).addTo(mymap);
+marker5.bindPopup("<b>project Name: Fire Station No. 24 </b><br> project size: 1 KW.</b><br>Built in: 2011").openPopup();
+var marker6= L.marker([50.957301, -114.121322]).addTo(mymap);
+marker6.bindPopup("<b>project Name: Fire Station No. 8 </b><br> project size: 1 KW.</b><br>Built in: 2011").openPopup();
+var marker7= L.marker([51.038610, -114.152193]).addTo(mymap);
+marker7.bindPopup("<b>project Name: Fire Station No. 5 </b><br> project size: 4 KW.</b><br>Built in: 2012").openPopup();
+var marker8= L.marker([51.025984, -114.095022]).addTo(mymap);
+marker8.bindPopup("<b>project Name:Bearspaw Operations Centre </b><br> project size: 50 KW.</b><br>Built in: 2014").openPopup();
+var marker9= L.marker([51.103424, -114.230759]).addTo(mymap);
+marker9.bindPopup("<b>project Name: Southland Leisure Centre </b><br> project size: 153 KW.</b><br>Built in: 2015").openPopup();
+var marker10= L.marker([50.962810, -114.108838]).addTo(mymap);
+marker10.bindPopup("<b>project Name: Hilhurst-Sunnyside </b><br> project size: 30 KW.</b><br>Built in: 2016").openPopup();
+var marker11= L.marker([51.057496, -114.092389]).addTo(mymap);
+marker11.bindPopup("<b>project Name: Richmond-Knobhill </b><br> project size: 11 KW.</b><br>Built in: 2016").openPopup();
+var marker12= L.marker([51.029854, -114.117013]).addTo(mymap);
+marker12.bindPopup("<b>project Name: Glenmore Water </b><br> project size: 292 KW.</b><br>Built in: 2017").openPopup();
+var marker13= L.marker([51.003631, -114.099830]).addTo(mymap);
+marker13.bindPopup("<b>project Name: Fire Headquarters </b><br> project size: 17 KW.</b><br>Built in: 2017").openPopup();
+var marker14= L.marker([51.017397, -114.036232]).addTo(mymap);
+marker14.bindPopup("<b>project Name: North Corporate Warehouse </b><br> project size: 115 KW.</b><br>Built in: 2017").openPopup();
+var marker15= L.marker([51.073119, -114.005432]).addTo(mymap);
+marker15.bindPopup("<b>project Name: Whitehorn Multi-Services </b><br> project size: 415 KW.</b><br>Built in: 2017").openPopup();
+var marker16= L.marker([51.086113, -113.983322]).addTo(mymap);
+marker16.bindPopup("<b>project Name: Fire Station No. 7 </b><br> project size: 32 KW.</b><br>Built in: 2017").openPopup();
+var marker17= L.marker([51.076373, -114.071067]).addTo(mymap);
+marker17.bindPopup("<b>project Name: Bearspaw Water </b><br> project size: 626 KW.</b><br>Built in: 2017").openPopup();
+var marker18= L.marker([51.106146, -114.229543]).addTo(mymap);
+marker18.bindPopup("<b>project Name: Manchester Building </b><br> project size: 37 KW.</b><br>Built in: 2017").openPopup();
+var marker19= L.marker([51.028051, -114.046389]).addTo(mymap);
+marker19.bindPopup("<b>project Name: TELUS Spark </b><br> project size: 108 KW.</b><br>Built in: 2017").openPopup();
+var marker20= L.marker([51.053722, -114.024431]).addTo(mymap);
+marker20.bindPopup("<b>project Name: Shepard Solar Park </b><br> project size: 1080 KW.</b><br>Built in: 2018").openPopup();
+var marker21= L.marker([50.944534, -113.932727]).addTo(mymap);
+marker21.bindPopup("<b>project Name: ​Tuscany Fire station </b><br> project size: 20 KW.</b><br>Built in: 2018").openPopup();
+var marker22= L.marker([51.126656, -114.249113]).addTo(mymap);
+marker3.bindPopup("<b>project Name: 69th St.Park and Ride </b><br> project size: 30 KW.</b><br>Built in: 2011").openPopup();
+var marker23= L.marker([51.013370, -114.171234]).addTo(mymap);
+marker23.bindPopup("<b>project Name: Sarcee Operations Centre </b><br> project size: 56 KW.</b><br>Built in: in progress").openPopup();
+
+
+
+ </script>
+
+
+
+
+  </body>
+</html>
